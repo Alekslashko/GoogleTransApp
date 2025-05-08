@@ -14,10 +14,10 @@ language = st.selectbox("Изберете език за превод", ["en", "f
 if text:
     translator = Translator()
     translation = translator.translate(text, dest=language)
-    st.write(f'Познайте отговора')
     answer = st.text_input("Опитайте се да познаете отговора")
     if answer == translation:
         st.write(f'{translation} е правилно')
     else:
         st.write(f'Грешно')
+    st.write(f'{translation}')
 
