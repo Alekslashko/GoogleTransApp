@@ -16,8 +16,8 @@ if text:
     translation = translator.translate(text, dest=language)
     st.write(f'Познайте отговора')
     answer = st.text_input("Опитайте се да познаете отговора")
-    if answer == translation
+    if answer == translation:
         st.write(f'{translation} е правилно')
-    else
+    else:
         st.write(f'Грешно')
 
